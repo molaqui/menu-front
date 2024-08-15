@@ -1,0 +1,83 @@
+{
+    "home": "الصفحة الرئيسية",
+    "about": "معلومات عنا",
+    "service": "الخدمة",
+    "menu": "قائمة",
+    "contact": "اتصل بنا",
+    "bookTable": "احجز طاولة",
+
+    "aboutUs": "معلومات عنا",
+    "welcomeTo": "مرحبا بكم في",
+    "yearsOf": "سنوات من",
+    "experience": "الخبرة",
+    "popular": "مشهور",
+    "masterChefs": "طهاة",
+    "readMore": "اقرأ أكثر",
+
+    "reservation": "الحجز",
+  "bookTableOnline": "حجز طاولة عبر الإنترنت",
+  "yourName": "اسمك",
+  "yourPhone": "هاتفك",
+  "dateTime": "التاريخ والوقت",
+  "numberOfPeople": "عدد الأشخاص",
+  "specialRequest": "طلب خاص",
+  "bookNow": "احجز الآن",
+  "reservationSuccessful": "تم الحجز بنجاح!",
+  "reservationError": "حدث خطأ أثناء الحجز.",
+
+  "contactUs": "اتصل بنا",
+  "contactAnyQuery": "اتصل بنا لأي استفسار",
+  "loadingMap": "جاري تحميل الخريطة...",
+
+  "yourEmail": "بريدك الإلكتروني",
+  "subject": "الموضوع",
+  "leaveMessage": "اترك رسالة هنا",
+  "message": "الرسالة",
+  "sendMessage": "إرسال الرسالة",
+  "messageSentSuccess": "تم إرسال الرسالة بنجاح!",
+  "errorOccured": "حدث خطأ، يرجى المحاولة مرة أخرى.",
+
+
+  "company": "الشركة",
+  
+  "newsletter": "النشرة الإخبارية",
+  "newsletterDesc": "ابقَ على اطلاع بآخر الأخبار.",
+  
+  "signUp": "اشترك",
+  "subscriptionSuccess": "تم الاشتراك بنجاح!",
+  "subscriptionFailed": "فشل الاشتراك.",
+  "allRightsReserved": "جميع الحقوق محفوظة",
+  "designedBy": "تصميم من قبل",
+
+  "enjoyOurDeliciousMeal": "استمتع بوجبتنا اللذيذة",
+  "headerSubtitle": "انغمس في رحلة من النكهات مع كل لقمة. أطباقنا المعدة بخبرة تعد بتجربة طعام لا تُنسى.",
+  "bookATable": "احجز طاولة",
+
+  "exploreOurMenu": "اكتشف اختياراتنا",
+  "exploreMenuDescription": "انغمس في قائمتنا المتنوعة التي تقدم شيئًا للجميع! استكشف عالمًا من النكهات مع أطباق مصنوعة بكمال.",
+
+  "topDishes": "أفضل الأطباق بالقرب منك",
+
+
+  "invalidToken": "رمز غير صالح أو منتهي الصلاحية",
+  "orderSuccess": "تم وضع الطلب بنجاح",
+  "orderError": "خطأ في وضع الطلب",
+  "fillAllFields": "يرجى ملء جميع الحقول.",
+  "cart": "عربة التسوق",
+  "emptyCart": "عربة التسوق فارغة.",
+  "total": "المجموع",
+  "placingOrder": "جاري وضع الطلب...",
+  "placeOrder": "إتمام الطلب",
+  "deliveryInfo": "معلومات التوصيل",
+  "name": "الاسم",
+  "phone": "الهاتف",
+  "address": "العنوان",
+  "confirm": "تأكيد",
+  "phoneError": "يجب أن يحتوي رقم الهاتف على 10 أرقام على الأقل.",
+
+  "teamMembers": "أعضاء الفريق",
+  "ourMasterChefs": "طهاتنا المحترفون"
+}
+  
+  
+  

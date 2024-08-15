@@ -1,0 +1,79 @@
+{
+  "home": "首页",
+  "about": "关于",
+  "service": "服务",
+  "menu": "菜单",
+  "contact": "联系",
+  "aboutUs": "关于我们",
+  "welcomeTo": "欢迎来到",
+  "yearsOf": "年的",
+  "experience": "经验",
+  "popular": "受欢迎的",
+  "masterChefs": "主厨",
+  "readMore": "阅读更多",
+  "reservation": "预订",
+  "bookTableOnline": "在线预订桌子",
+  "yourName": "你的名字",
+  "yourPhone": "你的电话",
+  "dateTime": "日期和时间",
+  "numberOfPeople": "人数",
+  "specialRequest": "特别要求",
+  "bookNow": "现在预订",
+  "reservationSuccessful": "预订成功!",
+  "reservationError": "预订时出错。",
+
+
+  "contactUs": "联系我们",
+  "contactAnyQuery": "如有任何疑问，请联系我们",
+  "loadingMap": "正在加载地图...",
+ 
+  "yourEmail": "您的邮箱",
+  "subject": "主题",
+  "leaveMessage": "在此留言",
+  "message": "信息",
+  "sendMessage": "发送信息",
+  "messageSentSuccess": "信息发送成功！",
+  "errorOccured": "发送出错，请再试一次。",
+
+
+  "company": "公司",
+  
+  "newsletter": "通讯",
+  "newsletterDesc": "获取我们的最新消息。",
+ 
+  "signUp": "注册",
+  "subscriptionSuccess": "订阅成功！",
+  "subscriptionFailed": "订阅失败。",
+  "allRightsReserved": "版权所有",
+  "designedBy": "设计者",
+
+  "enjoyOurDeliciousMeal": "享受我们美味的餐点",
+  "headerSubtitle": "每一口都是味觉之旅。我们精心制作的菜肴保证让您拥有难忘的餐饮体验。",
+  "bookATable": "预订桌位",
+
+  "exploreOurMenu": "发现我们的精选",
+  "exploreMenuDescription": "深入我们的多元化菜单，为每个人提供美食！ 探索精心制作的美食世界。",
+
+   "topDishes": "您附近的热门菜肴",
+
+
+   "invalidToken": "无效或已过期的令牌",
+  "orderSuccess": "订单成功下达",
+  "orderError": "下订单时出错",
+  "fillAllFields": "请填写所有字段。",
+  "cart": "购物车",
+  "emptyCart": "您的购物车是空的。",
+  "total": "总计",
+  "placingOrder": "正在下订单...",
+  "placeOrder": "下订单",
+  "deliveryInfo": "送货信息",
+  "name": "姓名",
+  "phone": "电话",
+  "address": "地址",
+  "confirm": "确认",
+  "phoneError": "电话号码必须至少包含10位数字。",
+
+   "teamMembers": "团队成员",
+  "ourMasterChefs": "我们的主厨"
+
+}

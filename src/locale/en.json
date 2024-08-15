@@ -1,0 +1,87 @@
+{
+  "home": "Home",
+  "about": "About",
+  "service": "Service",
+  "menu": "Menu",
+  "contact": "Contact",
+  "bookTable": "Book A Table",
+
+
+  "aboutUs": "About Us",
+  "welcome": "Welcome to",
+  "yearsOf": "Years of",
+  "experience": "Experience",
+  "popular": "Popular",
+  "masterChefs": "Master Chefs",
+  "readMore": "Read More",
+
+
+  "reservation": "Reservation",
+  "bookTableOnline": "Book A Table Online",
+  "yourName": "Your Name",
+  "yourPhone": "Your Phone",
+  "dateTime": "Date & Time",
+  "numberOfPeople": "No Of People",
+  "specialRequest": "Special Request",
+  "bookNow": "Book Now",
+  "reservationSuccessful": "Reservation successful!",
+  "reservationError": "There was an error making the reservation.",
+
+
+
+  "contactUs": "Contact Us",
+  "contactAnyQuery": "Contact for Any Query",
+  "loadingMap": "Loading map...",
+ 
+  "yourEmail": "Your Email",
+  "subject": "Subject",
+  "leaveMessage": "Leave a message here",
+  "message": "Message",
+  "sendMessage": "Send Message",
+  "messageSentSuccess": "Message sent successfully!",
+  "errorOccured": "An error occurred, please try again.",
+
+
+  "company": "Company",
+  
+  "newsletter": "Newsletter",
+  "newsletterDesc": "Stay updated with our latest news.",
+ 
+  "signUp": "Sign Up",
+  "subscriptionSuccess": "Subscription successful!",
+  "subscriptionFailed": "Subscription failed.",
+  "allRightsReserved": "All Rights Reserved",
+  "designedBy": "Designed by",
+
+
+  "enjoyOurDeliciousMeal": "Enjoy Our Delicious Meal",
+  "headerSubtitle": "Indulge in a journey of flavor with every bite. Our expertly crafted dishes promise an unforgettable dining experience.",
+  "bookATable": "Book a Table",
+
+
+  "exploreOurMenu": "Discover Our Selections",
+  "exploreMenuDescription": "Dive into our eclectic menu that offers something for everyone! Explore a world of flavors with dishes crafted to perfection.",
+
+ 
+  "topDishes": "Top Dishes Near You",
+
+  "invalidToken": "Invalid or expired token",
+  "orderSuccess": "Order placed successfully",
+  "orderError": "Error placing the order",
+  "fillAllFields": "Please fill all the fields.",
+  "cart": "Cart",
+  "emptyCart": "Your cart is empty.",
+  "total": "Total",
+  "placingOrder": "Placing order...",
+  "placeOrder": "Place Order",
+  "deliveryInfo": "Delivery Information",
+  "name": "Name",
+  "phone": "Phone",
+  "address": "Address",
+  "confirm": "Confirm",
+  "phoneError": "Phone number must be at least 10 digits.",
+
+
+  "teamMembers": "Team Members",
+  "ourMasterChefs": "Our Master Chefs"
+}

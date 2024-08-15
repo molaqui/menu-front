@@ -1,0 +1,85 @@
+{
+  "home": "Accueil",
+  "about": "À propos",
+  "service": "Service",
+  "menu": "Menu",
+  "contact": "Contact",
+  "bookTable": "Réserver une table",
+
+
+  "aboutUs": "À propos de nous",
+  "welcome": "Bienvenue chez",
+  "yearsOf": "Années de",
+  "experience": "Expérience",
+  "popular": "Populaire",
+  "masterChefs": "Maîtres Chefs",
+  "readMore": "En savoir plus",
+
+  "reservation": "Réservation",
+  "bookTableOnline": "Réservez une table en ligne",
+  "yourName": "Votre nom",
+  "yourPhone": "Votre téléphone",
+  "dateTime": "Date et heure",
+  "numberOfPeople": "Nombre de personnes",
+  "specialRequest": "Demande spéciale",
+  "bookNow": "Réserver maintenant",
+  "reservationSuccessful": "Réservation réussie!",
+  "reservationError": "Une erreur s'est produite lors de la réservation.",
+
+  "contactUs": "Nous contacter",
+  "contactAnyQuery": "Contactez-nous pour toute question",
+  "loadingMap": "Chargement de la carte...",
+  
+  "yourEmail": "Votre email",
+  "subject": "Sujet",
+  "leaveMessage": "Laissez un message ici",
+  "message": "Message",
+  "sendMessage": "Envoyer le message",
+  "messageSentSuccess": "Message envoyé avec succès!",
+  "errorOccured": "Une erreur est survenue, veuillez réessayer.",
+
+
+
+  "company": "Entreprise",
+  
+  "newsletter": "Bulletin",
+  "newsletterDesc": "Restez informé de nos dernières nouvelles.",
+ 
+  "signUp": "S'inscrire",
+  "subscriptionSuccess": "Abonnement réussi!",
+  "subscriptionFailed": "Échec de l'abonnement.",
+  "allRightsReserved": "Tous droits réservés",
+  "designedBy": "Conçu par",
+
+  "enjoyOurDeliciousMeal": "Savourez notre délicieux repas",
+  "headerSubtitle": "Laissez-vous emporter par un voyage de saveurs à chaque bouchée. Nos plats soigneusement préparés promettent une expérience culinaire inoubliable.",
+  "bookATable": "Réservez une table",
+
+
+  "exploreOurMenu": "Découvrez Nos Sélections",
+  "exploreMenuDescription": "Plongez dans notre menu éclectique qui offre quelque chose pour chacun ! Explorez un monde de saveurs avec des plats élaborés à la perfection.",
+
+   "topDishes": "Les meilleurs plats près de chez vous",
+
+
+   "invalidToken": "Jeton invalide ou expiré",
+  "orderSuccess": "Commande passée avec succès",
+  "orderError": "Erreur lors de la commande",
+  "fillAllFields": "Veuillez remplir tous les champs.",
+  "cart": "Panier",
+  "emptyCart": "Votre panier est vide.",
+  "total": "Total",
+  "placingOrder": "Commande en cours...",
+  "placeOrder": "Passer la commande",
+  "deliveryInfo": "Informations de livraison",
+  "name": "Nom",
+  "phone": "Téléphone",
+  "address": "Adresse",
+  "confirm": "Confirmer",
+  "phoneError": "Le numéro de téléphone doit comporter au moins 10 chiffres.",
+
+
+  "teamMembers": "Membres de l'équipe",
+  "ourMasterChefs": "Nos Chefs Cuisiniers"
+
+}

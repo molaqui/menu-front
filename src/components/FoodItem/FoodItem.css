@@ -1,0 +1,137 @@
+/* src/FoodItem.css */
+.food-item {
+  flex: 1 1 360px; /* Augmentez la largeur de l'élément */
+  max-width: 360px; /* Augmentez la largeur de l'élément */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-item-image {
+  width: 100%;
+  height: 280px; /* Fixe la hauteur de l'image à 280px */
+  border-radius: 15px 15px 0 0;
+  object-fit: cover; /* Assure que l'image couvre tout l'espace disponible */
+}
+
+.food-item-info {
+  padding: 10px; /* Réduit le padding pour minimiser la hauteur de l'info */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.food-item-name-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.food-item-name {
+  font-size: 18px; /* Réduit la taille de la police pour économiser de l'espace */
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.food-item-name-rating img {
+  width: 30px; /* Réduit la taille de l'image de la note */
+  margin-top: 5px;
+}
+
+.food-item-desc {
+  color: #676767;
+  font-size: 14px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.food-item-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.food-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px; /* Réduit le padding pour minimiser la hauteur */
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.food-item-price {
+  color: #fea116; /* Vert pour un aspect plus attrayant */
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.food-item:hover .food-item-overlay-icon {
+  opacity: 1;
+}
+
+.order-button {
+  background-color: #FEA116; /* Couleur de fond du bouton */
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 50%; /* Bordure circulaire */
+  cursor: pointer;
+  font-size: 1.5em; /* Taille de police plus grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 55px; /* Largeur pour rendre le bouton circulaire */
+  height: 55px; /* Hauteur pour rendre le bouton circulaire */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet plus professionnel */
+}
+
+.order-button i {
+  color: #fff; /* Icône blanche */
+}
+
+.order-button:hover {
+  background-color: #c57906; /* Changement de couleur au survol */
+  transform: scale(1.1); /* Légère augmentation de la taille au survol */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+}
+
+.order-button.checked {
+  background-color: #28a745; /* Vert pour état validé */
+}
+
+.order-button.checked i {
+  color: #fff; /* Icône blanche */
+}

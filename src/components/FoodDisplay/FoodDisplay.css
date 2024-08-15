@@ -1,0 +1,237 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.food-display {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.food-display-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.category-foods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between items */
+  justify-content: flex-start; /* Items will be aligned to the left */
+}
+
+.food-item {
+  flex: 1 1 360px;
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Add space between rows */
+}
+
+.food-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-item-image {
+  width: 100%;
+  height: 280px; /* Fixe la hauteur de l'image à 280px */
+  border-radius: 15px 15px 0 0;
+  object-fit: cover; /* Assure que l'image couvre tout l'espace disponible */
+}
+
+.food-item-info {
+  padding: 10px; /* Réduit le padding pour minimiser la hauteur de l'info */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.food-item-name-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.food-item-name {
+  font-size: 18px; /* Réduit la taille de la police pour économiser de l'espace */
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.food-item-name-rating img {
+  width: 30px; /* Réduit la taille de l'image de la note */
+  margin-top: 5px;
+}
+
+.food-item-desc {
+  color: #676767;
+  font-size: 14px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.food-item-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.food-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px; /* Réduit le padding pour minimiser la hauteur */
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.food-item-price {
+  color: #28a745; /* Vert pour un aspect plus attrayant */
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.food-item:hover .food-item-overlay-icon {
+  opacity: 1;
+}
+
+.order-button {
+  background-color: #ff6f61; /* Changer la couleur du bouton pour être plus accrocheur */
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 50%; /* Bordure circulaire */
+  cursor: pointer;
+  font-size: 1.5em; /* Taille de police plus grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 55px; /* Largeur pour rendre le bouton circulaire */
+  height: 55px; /* Hauteur pour rendre le bouton circulaire */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet plus professionnel */
+}
+
+.order-button i {
+  color: #fff; /* Icône blanche */
+}
+
+.order-button:hover {
+  background-color: #e55d54;
+  transform: scale(1.1); /* Légère augmentation de la taille au survol */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+}
+
+@media (min-width: 1200px) {
+  .category-foods .food-item {
+    flex: 1 1 calc(25% - 20px); /* Adjust item width for large screens */
+    max-width: calc(25% - 20px); /* Adjust max item width for large screens */
+  }
+}
+
+@media (max-width: 1200px) {
+  .category-foods .food-item {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust item width for medium screens */
+    max-width: calc(33.33% - 20px); /* Adjust max item width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .category-foods {
+    justify-content: center;
+  }
+
+  .category-foods .food-item {
+    flex: 1 1 calc(50% - 10px); /* Adjust item width for small screens */
+    max-width: calc(50% - 10px); /* Adjust max item width for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-foods .food-item {
+    flex: 1 1 calc(100% - 10px); /* Adjust item width for very small screens */
+    max-width: calc(100% - 10px); /* Adjust max item width for very small screens */
+  }
+}
+
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}

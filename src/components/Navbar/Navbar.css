@@ -1,0 +1,23 @@
+.navbar .dropdown-toggle::after {
+  display: none; /* Remove default caret */
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark background */
+  border: none;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #495057; /* Darker hover */
+}
+
+.flag-icon {
+  margin-right: 8px; /* Space between flag and text */
+}
