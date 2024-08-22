@@ -67,23 +67,19 @@ function First({ translations }) {
     setLoading(false);
   }, []);
 
-  if (loading) {
+  if (loading || !authenticated) {
     return (
       <div className="spinner-container">
-        <div className="spinner"></div>
+        <div className="loader"></div>
       </div>
     );
-  }
-
-  if (!authenticated) {
-    return <div>Authentication failed.</div>;
   }
 
   return (
     <div>
       <Navbar storeName={storeName} />
       {/* Affichez le nombre de visites */}
-      <Home translations={translations}  storeName={storeName} />
+      <Home translations={translations} storeName={storeName} />
     </div>
   );
 }

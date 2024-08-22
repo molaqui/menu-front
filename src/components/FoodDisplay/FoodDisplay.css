@@ -215,7 +215,7 @@
 }
 
 
-.loader {
+.loaderr {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -224,8 +224,8 @@
   margin-left: 50%;
 }
 
-.loader:before,
-.loader:after {
+.loaderr:before,
+.loaderr:after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -235,7 +235,7 @@
   animation: rotate 1s ease infinite;
 }
 
-.loader:after {
+.loaderr:after {
   animation-delay: 0.5s;
 }
 
