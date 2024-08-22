@@ -6,6 +6,7 @@ import ExploreMenu from '../../components/ExploreMenu/ExploreMenu';
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay';
 import Cookies from 'js-cookie';
 import foodService from '../../Api/FoodServices';
+
 import OrderService from '../../Api/OrderService';
 import About from '../../components/About/About';
 import BookTable from '../../components/BookTable/BookTable';
@@ -17,8 +18,9 @@ import { useLocation } from 'react-router-dom';
 import Service from '../Service/Service';
 import tokenService from '../../Api/tokenService';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../components/Footer/Footer';
 
-function Home({ translations }) {
+function Home({ translations,storeName }) {
   const [category, setCategory] = useState("All");
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [foodDetails, setFoodDetails] = useState([]);
@@ -196,6 +198,7 @@ function Home({ translations }) {
       <div id="contact">
         <Contact />
       </div>
+      <Footer storeName={storeName}/>
       
       <button className="cart-button" onClick={handleCartClick}>
         <i className="fas fa-shopping-cart"></i>
@@ -204,7 +207,7 @@ function Home({ translations }) {
       {isCartOpen && (
         <animated.div className="cart-popup" style={animationProps}>
           <div className="cart-popup-header">
-            <h2>{t('cart')}</h2>
+            <h3>{t('cart')}</h3>
             <button className="close-button" onClick={() => setIsCartOpen(false)}>×</button>
           </div>
           <div className="cart-items-container">

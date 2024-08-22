@@ -5,6 +5,7 @@ import CategoryService from '../../Api/CategoryService';
 import { useParams } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import './spinner.css';
+import Navbar from '../../components/Navbar/Navbar';
 
 function First({ translations }) {
   const { storeName } = useParams();
@@ -80,8 +81,9 @@ function First({ translations }) {
 
   return (
     <div>
+      <Navbar storeName={storeName} />
       {/* Affichez le nombre de visites */}
-      <Home translations={translations} />
+      <Home translations={translations}  storeName={storeName} />
     </div>
   );
 }

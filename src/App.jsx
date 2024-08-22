@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Route, Routes, useParams } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer';
+import './App.css'
 
 import First from './pages/First/First';
 import enTranslations from './locale/en.json';
@@ -38,12 +37,12 @@ const App = () => {
 
       <div className="app">
         
-      <Navbar language={language} changeLanguage={changeLanguage} />
+      
         <Routes>
-        <Route path="/:storeName" element={<First translations={translations} />} />
+        <Route path="/:storeName" element={<First translations={translations}  language={language} changeLanguage={changeLanguage}/>} />
         </Routes>
       </div>
-      <Footer />
+     
     </>
    
   );

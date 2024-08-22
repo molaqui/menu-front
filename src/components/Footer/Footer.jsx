@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import authService from '../../Api/tokenService';
+import authService from '../../Api/AuthService';
 import subscriberService from '../../Api/SubscriberService'; // Assuming you have a subscriberService
 import './Footer.css';
-import Cookies from 'js-cookie';
+
 import { useTranslation } from 'react-i18next'; // Importation de useTranslation
 
-function Footer() {
+
+function Footer({storeName}) {
+
   const { t } = useTranslation(); // Utilisation de useTranslation pour accéder aux traductions
   const [email, setEmail] = useState('');
   const [contactInfo, setContactInfo] = useState({ city: '', phone: '', email: '' });
 
   useEffect(() => {
     const fetchContactInfo = async () => {
+      
       try {
-        const userId = Cookies.get('userId');
-        const userData = await authService.getUserById(userId);
+        
+        const userData = await authService.getUserByStoreName(storeName);
         setContactInfo({
-          address: userData.city,
-          phone: userData.phone,
-          email: userData.email,
+          address: userData.data.city,
+          phone: userData.data.phone,
+          email: userData.data.email,
         });
       } catch (error) {
         console.error('Error fetching contact info:', error);
@@ -89,7 +92,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
               &copy; <a className="border-bottom" href="#">Test Website</a>, {t('allRightsReserved')}.
-              {t('designedBy')} <a className="border-bottom" href="#">Aderraahim</a>
+              {t('designedBy')} <a className="border-bottom" href="https://lmenu-v1.netlify.app/">LMENU</a>
             </div>
             <div className="col-md-6 text-center text-md-end">
               <div className="footer-menu">

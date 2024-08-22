@@ -6,6 +6,8 @@
   background-color: #343a40; /* Dark background */
   border: none;
   min-width: 150px;
+  z-index: 1050; /* Ensure the dropdown is on top */
+  position: absolute; /* Make sure it overlaps correctly */
 }
 
 .dropdown-item {
@@ -20,4 +22,18 @@
 
 .flag-icon {
   margin-right: 8px; /* Space between flag and text */
+}
+
+/* Adjust dropdown positioning for small screens */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-grow: 1;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050; /* Ensure the dropdown is on top */
+  }
 }

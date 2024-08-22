@@ -50,8 +50,8 @@ const FoodDisplay = ({ category, onAddToCart }) => {
 
   if (loading) {
     return (
-      <div className='food-display spinner' id='food-display'>
-        {/* Spinner shown here */}
+      <div className='food-display text-center' id='food-display'>
+        <div className="loader"></div> {/* Utilisation du style de spinner personnalisé */}
       </div>
     );
   }

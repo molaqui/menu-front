@@ -207,6 +207,17 @@
     display: none;
 }
 
+/* Responsive Fix for Small Screens */
+@media (max-width: 767.98px) {
+    .section-title::before,
+    .section-title::after {
+        width: 20px; /* Reduced width */
+        left: -25px; /* Adjust left position */
+        right: -25px; /* Adjust right position */
+    }
+}
+
+
 
 /*** Service ***/
 .service-item {

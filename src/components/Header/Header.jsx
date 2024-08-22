@@ -59,12 +59,12 @@ const Header = () => {
           height: '100vh'
         }}>
           <div>
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-            <hr />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
           <div className="container my-5 py-5">
             <div className="row align-items-center g-5">
@@ -92,13 +92,12 @@ const Header = () => {
               display: index === currentIndex ? 'block' : 'none',
             }}
           >
-             <hr />
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-            <hr />
-            <hr />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <div className="container my-5 py-5">
               <div className="row align-items-center g-5">
                 <div className={`col-lg-6 text-center text-lg-start ${i18n.language === 'ar' ? 'text-lg-end' : ''}`}>

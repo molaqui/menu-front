@@ -38,6 +38,9 @@ const Modal = ({ isOpen, onClose, food, addToCart }) => {
 
   const currentImage = food.images[currentImageIndex];
 
+  // Check if there are multiple images
+  const hasMultipleImages = food.images.length > 1;
+
   return (
     <div className="modal-overlay">
       <div className="modal-content">
@@ -45,7 +48,7 @@ const Modal = ({ isOpen, onClose, food, addToCart }) => {
           <i className="fas fa-times"></i>
         </button>
         <div className="modal-image-container">
-          {food.images.length > 1 && (
+          {hasMultipleImages && (
             <button className="nav-button prev-button" onClick={prevImage}>
               &#9664;
             </button>
@@ -55,7 +58,7 @@ const Modal = ({ isOpen, onClose, food, addToCart }) => {
             alt={food.name}
             className="modal-food-image"
           />
-          {food.images.length > 1 && (
+          {hasMultipleImages && (
             <button className="nav-button next-button" onClick={nextImage}>
               &#9654;
             </button>
@@ -64,10 +67,6 @@ const Modal = ({ isOpen, onClose, food, addToCart }) => {
         <h2>{food.name}</h2>
         <p>{food.description}</p>
         <p className="price">Price: {food.price} Dhs</p>
-        {/* Uncomment the button if needed */}
-        {/* <button className="add-to-cart-button" onClick={() => addToCart(food.id)}>
-          <i className="fas fa-shopping-cart"></i> Add to Cart
-        </button> */}
       </div>
     </div>
   );
