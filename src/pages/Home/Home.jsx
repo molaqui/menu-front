@@ -176,7 +176,7 @@ function Home({ translations,storeName }) {
 
   return (
     <div>
-      <Header />
+      <Header tableNumber={tableNumber}/>
       <div id="menu">
         <ExploreMenu category={category} setCategory={setCategory} />
       </div>

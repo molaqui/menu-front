@@ -1,14 +1,18 @@
+// src/components/Header/Header.jsx
+
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import headerImageService from '../../Api/headerImageService';
-import Cookies from 'js-cookie';
+import headerImageService from '../../Api/headerImageService'; // Correct path to headerImageService
+import vonageMessageService from '../../Api/vonageMessageService'; // Correct path to vonageMessageService
+
 import { useTranslation } from 'react-i18next';  // Importation de useTranslation de i18next
 
-const Header = () => {
+const Header = ({ tableNumber }) => {
   const { t, i18n } = useTranslation();  // Utilisation de useTranslation pour accéder aux traductions
   const [headerImages, setHeaderImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true); // State to track loading
+  const [response, setResponse] = useState(''); // State to show response message
 
   useEffect(() => {
     const fetchHeaderImages = async () => {
@@ -43,6 +47,15 @@ const Header = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? headerImages.length - 1 : prevIndex - 1
     );
+  };
+
+  const handleSendTableNumber = async () => {
+    try {
+      const result = await vonageMessageService.sendTableNumber(tableNumber);
+      setResponse(result);
+    } catch (error) {
+      setResponse('Error sending table number');
+    }
   };
 
   // Don't render anything until we know if there are header images or not
@@ -116,6 +129,13 @@ const Header = () => {
           <button className="next-slide" onClick={nextSlide}>❯</button>
         </>
       )}
+      {/* New Button to Send Table Number */}
+      <div className="send-table-number-container">
+        <button onClick={handleSendTableNumber}>
+          Send Table Number
+        </button>
+        {response && <p>{response}</p>}
+      </div>
     </div>
   );
 };
