@@ -4,15 +4,16 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import headerImageService from '../../Api/headerImageService'; // Correct path to headerImageService
 import vonageMessageService from '../../Api/vonageMessageService'; // Correct path to vonageMessageService
-
 import { useTranslation } from 'react-i18next';  // Importation de useTranslation de i18next
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = ({ tableNumber }) => {
   const { t, i18n } = useTranslation();  // Utilisation de useTranslation pour accéder aux traductions
   const [headerImages, setHeaderImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true); // State to track loading
-  const [response, setResponse] = useState(''); // State to show response message
+  const [isSending, setIsSending] = useState(false); // State to show spinner
 
   useEffect(() => {
     const fetchHeaderImages = async () => {
@@ -48,16 +49,17 @@ const Header = ({ tableNumber }) => {
       prevIndex === 0 ? headerImages.length - 1 : prevIndex - 1
     );
   };
-
   const handleSendTableNumber = async () => {
+    setIsSending(true); // Show spinner
     try {
       const result = await vonageMessageService.sendTableNumber(tableNumber);
-      setResponse(result);
+      toast.success(result.message || t('serverWillComeShortly'));
     } catch (error) {
-      setResponse('Error sending table number');
+      toast.error(t('errorSendingTableNumber'));
+    } finally {
+      setIsSending(false); // Hide spinner
     }
   };
-
   // Don't render anything until we know if there are header images or not
   if (loading) return null;
 
@@ -86,7 +88,14 @@ const Header = ({ tableNumber }) => {
                 <p className="text-white animated slideInLeft mb-4 pb-2">
                   {t('headerSubtitle')}
                 </p>
-                <a href="#book-table" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('bookATable')}</a>
+                <div className="d-flex flex-row">
+                  <a href="#book-table" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('bookATable')}</a>
+                  <div className="send-table-number-container">
+                    <button onClick={handleSendTableNumber} className="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">
+                      {isSending ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> : t('callRestaurantServer')}
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -116,7 +125,14 @@ const Header = ({ tableNumber }) => {
                 <div className={`col-lg-6 text-center text-lg-start ${i18n.language === 'ar' ? 'text-lg-end' : ''}`}>
                   <h1 className="display-3 text-white animated slideInLeft">{image.title}</h1>
                   <p className="text-white animated slideInLeft mb-4 pb-2">{image.subtitle}</p>
-                  <a href="#book-table" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('bookATable')}</a>
+                  <div className="d-flex flex-row">
+                    <a href="#book-table" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">{t('bookATable')}</a>
+                    <div className="send-table-number-container">
+                      <button onClick={handleSendTableNumber} className="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">
+                        {isSending ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> : t('callRestaurantServer')}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,13 +145,7 @@ const Header = ({ tableNumber }) => {
           <button className="next-slide" onClick={nextSlide}>❯</button>
         </>
       )}
-      {/* New Button to Send Table Number */}
-      <div className="send-table-number-container">
-        <button onClick={handleSendTableNumber}>
-          Send Table Number
-        </button>
-        {response && <p>{response}</p>}
-      </div>
+      <ToastContainer />
     </div>
   );
 };

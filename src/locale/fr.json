@@ -80,6 +80,10 @@
 
 
   "teamMembers": "Membres de l'équipe",
-  "ourMasterChefs": "Nos Chefs Cuisiniers"
+  "ourMasterChefs": "Nos Chefs Cuisiniers",
+  "callRestaurantServer": "Appeler le serveur du restaurant",
+  "serverWillComeShortly": "Le serveur va arriver bientôt",
+  "errorSendingTableNumber": "Erreur lors de l'envoi du numéro de table",
+  "alertTitle": "Notification"
 
 }

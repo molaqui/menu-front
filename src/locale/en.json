@@ -83,5 +83,10 @@
 
 
   "teamMembers": "Team Members",
-  "ourMasterChefs": "Our Master Chefs"
+  "ourMasterChefs": "Our Master Chefs",
+
+  "callRestaurantServer": "Call Restaurant Server",
+  "serverWillComeShortly": "The server will come shortly",
+  "errorSendingTableNumber": "Error sending table number",
+  "alertTitle": "Notification"
 }

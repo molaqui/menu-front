@@ -88,3 +88,28 @@
     margin-left: 10px;
   }
   
+  /* src/components/Header/Header.css */
+
+/* src/components/Header/Header.css */
+
+.send-table-number-container {
+  margin-top: 0; /* Ensure no margin top to align with the link */
+}
+
+.send-table-number-container button {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.send-table-number-container button:hover {
+  background-color: #5a6268;
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}

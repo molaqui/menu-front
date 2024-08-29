@@ -76,7 +76,11 @@
   "phoneError": "يجب أن يحتوي رقم الهاتف على 10 أرقام على الأقل.",
 
   "teamMembers": "أعضاء الفريق",
-  "ourMasterChefs": "طهاتنا المحترفون"
+  "ourMasterChefs": "طهاتنا المحترفون",
+  "callRestaurantServer": "استدعاء خادم المطعم",
+  "serverWillComeShortly": "سيأتي الخادم قريبًا",
+  "errorSendingTableNumber": "خطأ في إرسال رقم الطاولة",
+  "alertTitle": "إعلام"
 }
   
   

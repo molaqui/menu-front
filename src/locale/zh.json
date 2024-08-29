@@ -74,6 +74,10 @@
   "phoneError": "电话号码必须至少包含10位数字。",
 
    "teamMembers": "团队成员",
-  "ourMasterChefs": "我们的主厨"
+  "ourMasterChefs": "我们的主厨",
+  "callRestaurantServer": "呼叫餐厅服务员",
+  "serverWillComeShortly": "服务员很快就会来",
+  "errorSendingTableNumber": "发送桌号时出错",
+  "alertTitle": "通知"
 
 }
